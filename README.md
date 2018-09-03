@@ -6,7 +6,11 @@ THis repo contains small notes for setting-up/tips and related usefull info abou
 
 ```bash
 sudo pip3 install grimoirelab
+pip3 install sortinghat
 ```
+
+Make sure you have elastisearch installed and running for your distro.
+
 
 
 # single components install
