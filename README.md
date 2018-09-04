@@ -4,21 +4,24 @@ THis repo contains small notes for setting-up/tips and related usefull info abou
 
 # Installation
 
-The grimoirelab installation need some steps.
+The grimoirelab installation need some steps. 
 
 
+I just reordered most of them here.
+
+___
 0) grimoirelab install
 
 ```bash
 sudo pip3 install grimoirelab
 pip3 install sortinghat
 ```
-
+___
 1) elasticsearch install
 
 Make sure you have elastisearch installed and running for your distro.
 
-
+___
 2) Database install and sortinghat.
 
 Download and install `mysql` and `mariadb` database.
@@ -40,3 +43,24 @@ grimoirelab2 is just a name for the database you can change it
 ```bash
 sortinghat -u sortinghat2 -p YOUR_PASSWORD init grimoirelab2
 ```
+
+Well done!
+
+___
+3) kibiter installation.
+
+download latest release
+`https://github.com/chaoss/grimoirelab-kibiter/releases`
+
+___
+4) Now use sirmordred
+
+You need to fill project.json and menu.json file. ( WIP finish this.)
+
+```bash
+sirmordred -c example.cfg 
+```
+
+
+___
+For full doc look here: https://chaoss.github.io/grimoirelab-tutorial/basics/supporting.html and other pages there.
